@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qawiyy</title>
+    <link rel="icon" href="sources/logo.png">
+    <link rel="stylesheet" href="gym.css">
+</head>
+
+<body>
+    <img src="sources/backgrounds/Toji.png" id="bg" alt="">
+    <main>
+        <div class="wel">
+            <img src="sources/logo.png" alt="">
+        </div>
+        <header>
+            <h2 id="es"></h2>
+            <button id="plus" onclick="create()">+ template</button>
+        </header>
+        <div id="templates">
+        </div>
+        <br>
+    </main>
+    <div class="tell">
+        <div id="quote"></div>
+    </div>
+    <nav>
+        <li>Workout</li>
+        <li>Clock</li>
+    </nav>
+    <div class="adi" id="adi">
+        <div class="fil" id="fil">
+            <section>
+                <h3>Exercices:</h3>
+                <select name="" id="">
+                    <option value="all" selected>All</option>
+                    <option value="abs">Abs</option>
+                    <option value="back">Back</option>
+                    <option value="biceps">Biceps</option>
+                    <option value="chest">Chest</option>
+                    <option value="forearms">Forearms</option>
+                    <option value="legs">Legs</option>
+                    <option value="shoulder">Shoulders</option>
+                    <option value="tricep">Triceps</option>
+                </select>
+            </section>
+            <div id="galery">
+
+            </div>
+        </div>
+        <div id="entete">
+            <section><img src="sources/logo.png" alt=""></section>
+            <section><label for="nom">Template name:</label><input id="nom" placeholder="Name..." maxlength="9"
+                    type="text">
+            </section>
+            <section>
+                <label for="note">Note:</label><textarea id="note" placeholder="Note..." maxlength="20"></textarea>
+                <button id="cl" onclick="clo()">Close</button>
+                <label class="lab" id="showex"></label>
+                <button id="ver" onclick="ver()">Add +</button>
+            </section>
+        </div>
+    </div>
+    <script src="gym-main.js"></script>
+</body>
+
+</html>
